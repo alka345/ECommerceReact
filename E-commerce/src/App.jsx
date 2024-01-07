@@ -8,6 +8,8 @@ import Home from './Pages/Home'
 import LoginPage from './Pages/LoginPage'
 import Signup from './Auth/Components/Signup'
 import SignupPage from './Pages/SignupPage'
+import CartPage from './Pages/CartPage'
+import Checkout from './Pages/Checkout'
 // import { createRoot } from "react-dom/client";
 import {
   createBrowserRouter,
@@ -15,6 +17,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Cart from './cart/Cart'
 
 const router = createBrowserRouter([
   {
@@ -28,7 +31,16 @@ const router = createBrowserRouter([
   },
   {
     path:'/signup',
-    element: <SignupPage></SignupPage>
+    element: <SignupPage></SignupPage>,
+  },
+  {
+    
+    path:'/cart',
+    element:<CartPage></CartPage>,
+  },
+  {
+    path:'/checkout',
+    element:<Checkout></Checkout>
   }
 ]);
 
