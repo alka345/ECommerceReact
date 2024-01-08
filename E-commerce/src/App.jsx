@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ProductList from './Product-list/ProductList'
+import ProductList from './Product-list/Components/ProductList'
+import ProductDetailPage from './Pages/ProductDetailPage'
 import NavBar from './Navbar/Navbar'
 import Home from './Pages/Home'
 import LoginPage from './Pages/LoginPage'
@@ -18,6 +19,7 @@ import {
   Link,
 } from "react-router-dom";
 import Cart from './cart/Cart'
+import ProductDetail from './Product-list/Components/ProductDetail'
 
 const router = createBrowserRouter([
   {
@@ -41,7 +43,14 @@ const router = createBrowserRouter([
   {
     path:'/checkout',
     element:<Checkout></Checkout>
-  }
+  },
+  {
+    path:'/product-detail',
+    element:<ProductDetailPage></ProductDetailPage>
+  },
+  // {
+  //   path:'/'
+  // }
 ]);
 
 

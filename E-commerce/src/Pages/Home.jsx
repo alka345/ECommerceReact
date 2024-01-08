@@ -1,5 +1,5 @@
 import NavBar from "../Navbar/Navbar";
-import ProductList from "../Product-list/ProductList";
+import ProductList from "../Product-list/Components/ProductList";
 
 
 
